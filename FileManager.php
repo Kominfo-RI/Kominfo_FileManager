@@ -17,7 +17,7 @@ define('VERSION', '2.5.3');
 define('APP_TITLE', 'DATA CENTER INDONESIA');
 
 // --- EDIT BELOW CONFIGURATION CAREFULLY ---
-use_auth = false;
+$use_auth = false;
 
 // Global readonly, including when auth is not being used
 $global_readonly = false;
