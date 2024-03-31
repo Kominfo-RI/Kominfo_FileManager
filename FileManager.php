@@ -28,8 +28,8 @@ $auth_users = array(
 
 // Readonly users
 $readonly_users = array(
-    'www-data'
-    'apache2'
+    'www-data',
+    'apache2',
     '$user'
 );
 
