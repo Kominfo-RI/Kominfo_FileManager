@@ -17,21 +17,7 @@ define('VERSION', '2.5.3');
 define('APP_TITLE', 'DATA CENTER INDONESIA');
 
 // --- EDIT BELOW CONFIGURATION CAREFULLY ---
-
-// Auth with login/password
-// set true/false to enable/disable it
-// Is independent from IP white- and blacklisting
-$use_auth = true;
-$auth_users = array(
-    'diskominfo' => '$2y$10$WTyvkzdnF4vJvIxq86MgoOSO8ckReZcSDQv6ytpSc692NG1Lq1gKm', 
-);
-
-// Readonly users
-$readonly_users = array(
-    'www-data',
-    'apache2',
-    '$user'
-);
+use_auth = false;
 
 // Global readonly, including when auth is not being used
 $global_readonly = false;
