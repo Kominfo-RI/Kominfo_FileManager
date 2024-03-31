@@ -12,7 +12,7 @@
 
 Download ZIP with latest version from master branch.
 
-Just copy the tinyfilemanager.php to your webspace - thats all :)
+Just copy the FileManager.php to your webspace - thats all :)
 You can also change the file name from "FileManager.php" to something else, you know what i meant for.
 
 Default username/password: **diskominfo/diskominfo123** 
